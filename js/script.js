@@ -11,11 +11,11 @@ elForm.addEventListener('submit', function (evt) {
 
 	for (item of list) {
 		let newItem = document.createElement('li');
-		let newText = document.createElement('p');
+		let newList = document.createElement('p');
 		newItem.setAttribute('class', 'item');
-		newText.setAttribute('class', 'text');
-		newText.textContent = inputString;
-		newItem.appendChild(newText);
+		newList.setAttribute('class', 'text');
+		newList.textContent = inputString;
+		newItem.appendChild(newList);
 		elList.appendChild(newItem);
 	}
 })
